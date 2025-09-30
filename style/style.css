@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body,
+.navbar,
+.menu a,
+.container {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+* {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:#ebebeb;
+}
+
+/* HEADER */
+header {
+    box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ebebeb;
+    padding: 10px 20px;
+}
+
+/* LOGO */
+.logo {
+    height: 50px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: "Pixelify Sans", sans-serif;
+    transition: transform 0.2s ease;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px 18px rgba(0, 0, 0, 0.178);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+}
+
+.hero {
+    box-shadow: 0px 10px 20px 18px rgba(0, 0, 0, 0.178);
+    z-index: 10;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+/* HERO TEXT */
+.hero-text {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+    font-family: "Jersey 15", sans-serif;
+}
+
+.text {
+    margin-right: 700px;
+    font-size: 45px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: lighter;
+
+
+}
+
+.hero-title {
+    font-size: 89px;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+    font-size: 91px;
+    color: #4d945d;
+    transform: translateY(-15%);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    height: auto;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: space-evenly;
+    border: 4px solid rgb(20, 20, 20);
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 40px;
+    font-family: "Jersey 15", sans-serif;
+    z-index: 1;
+    line-height: 40px;
+}
+
+.container {
+    box-shadow: 0px 10px 19px 2px rgba(0, 0, 0, 0.178);
+}
+
+.label {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 0px 10px;
+    border: 4px solid rgb(20, 20, 20);
+}
+
+.ods {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* mantém 6 colunas */
+    gap: 10px;
+    text-align: center;
+    margin-left: -900px;
+}
+
+.ods-logo {
+    grid-column: 1 / -1;
+    /* faz o logo ocupar toda a largura */
+    max-width: 200px;
+    /* ajuste do tamanho */
+    margin: 0 auto 20px auto;
+    /* centraliza e dá espaço abaixo */
+    object-fit: contain;
+}
+
+.container2 {
+    height: auto;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: space-evenly;
+    border: 4px solid rgb(20, 20, 20);
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    font-size: 40px;
+    font-family: "Jersey 15", sans-serif;
+    z-index: 1;
+    line-height: 40px;
+    flex: 2 1 45%;
+    /* ocupa até 45% do espaço disponível */
+    /* opcional, para não ficar muito grande */
+    box-shadow: 0px 10px 19px 2px rgba(0, 0, 0, 0.178);
+}
+
+.container-wrapper {
+    display: flex;
+    /* ativa o layout flex */
+    gap: 30px;
+    /* espaço entre os containers */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    flex-wrap: wrap;
+    /* se a tela for pequena, empilha os containers */
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+@media (max-width: 1024px) {
+  .logo {
+    height: 40px;
+  }
+  .text {
+    margin-right: 60px;
+    font-size: 35px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: lighter;
+
+
+}
+
+  .hero-text {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+    font-family: "Jersey 15", sans-serif;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-subtitle {
+    font-size: 58px;
+    color: #583ea0;
+    transform: translateY(-15%);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .image-container {
+  width: 225px;
+
+}
+
+
+.image-container img {
+  width: 225px;
+  height: 300px;
+}
+
+.info {
+  padding: 10px 15px;
+}
+
+.info h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.info p {
+
+  font-size: 15px;
+
+}
+
+.container {
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.code {
+  font-size: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .logo {
+    height: 35px;
+  }
+
+  .text {
+    margin-right: -23px;
+    font-size: 25px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: lighter;
+
+
+}
+.menu a {
+    font-size: 14px;
+  }
+
+  .hero-text {
+  top: 80%;
+
+  }
+
+  .hero-title {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-subtitle {
+    font-size: 48px;
+    color: #583ea0;
+    transform: translateY(-15%);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+
+  .image-container {
+  width: 170px;
+
+}
+
+
+.image-container img {
+  width: 170px;
+  height: 200px;
+}
+
+.info {
+  padding: 10px 15px;
+}
+
+.info h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.info p {
+
+  font-size: 15px;
+
+}
+
+.container {
+  margin: 40px;
+  margin-bottom: 80px;
+}
+
+.code {
+  font-size: 20px;
+  line-height: 5px;
+}
+p{
+  font-size: 25px;
+}
+.label{
+  font-size: 25px;
+    top: -18px;
+
+
+}
+}
+
+
+
+ @media (max-width: 425px) {
+
+  .text {
+    margin-right: 0px;
+    font-size: 15px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: lighter;
+  }
+
+  .hero-text {
+    top: 78%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+    font-family: "Jersey 15", sans-serif;
+  }
+
+  .hero-title {
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-subtitle {
+    font-size: 23px;
+    color: #583ea0;
+    transform: translateY(-15%);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .logo {
+    height: 25px;
+  }
+
+  .menu a {
+    font-size: 8px;
+  }
+
+  .image-container {
+    width: 100px;
+  }
+
+  .image-container img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .info {
+    padding: 10px 15px;
+  }
+
+  .info h3 {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .info p {
+    font-size: 11px;
+  }
+
+  .container {
+    margin: 20px;
+    margin-bottom: 40px;
+    line-height: 20px;
+    border: 2px solid #000;
+  }
+
+  .container2 {
+    margin: 20px auto;
+    width: 80%;           /* ocupa toda a largura da tela */
+    line-height: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .container-row {
+    flex-direction: column; /* empilha os container2 */
+    gap: 20px;
+  }
+
+  .code {
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .label {
+    font-size: 15px;
+    top: -18px;
+  }
+
+}
